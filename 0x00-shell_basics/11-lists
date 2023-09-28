@@ -1,0 +1,2 @@
+#!/bin/bash
+(echo "Files in the current directory:"; ls -al) | (echo "Files in the parent directory:"; (cd ..; ls -al)) | (echo "Files in the /boot directory:"; ls -al /boot)
